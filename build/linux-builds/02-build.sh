@@ -52,3 +52,4 @@ do_lib_build()
 # libをビルド
 do_lib_build ${BASE_PATH}libs/container linux-x86
 do_lib_build ${BASE_PATH}libs/atomic linux-x86
+do_lib_build ${BASE_PATH}libs/pool linux-x86

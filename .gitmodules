@@ -4,3 +4,6 @@
 [submodule "libs/atomic"]
 	path = libs/atomic
 	url = https://github.com/sharaku/atomic.git
+[submodule "libs/pool"]
+	path = libs/pool
+	url = https://github.com/sharaku/pool.git

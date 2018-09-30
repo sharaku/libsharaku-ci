@@ -43,3 +43,4 @@ do_testing()
 # test‚ðƒrƒ‹ƒh
 do_testing ${BASE_PATH}libs/container/sharaku.container.test
 do_testing ${BASE_PATH}libs/atomic/sharaku.atomic.test
+do_testing ${BASE_PATH}libs/pool/sharaku.pool.test

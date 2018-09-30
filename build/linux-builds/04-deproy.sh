@@ -47,6 +47,9 @@ do_copy()
 	lib_path=$1
 	cp -pR ${lib_path}/include ${DEF_DEPROYPATH}
 
+	if [ -f "${lib_path}/lib*.a" ]; then
+		cp -pR ${lib_path}/${lib_path}/lib*.a ${DEF_DEPROYPATH}lib/libsharaku/
+	fi
 }
 
 
@@ -55,12 +58,5 @@ do_copy()
 # ---------------------------------------------------------------------------
 do_copy ${BASE_PATH}/libs/container
 do_copy ${BASE_PATH}/libs/atomic
-
-#cp -pR ${BASE_PATH}/include/* ${BASE_PATH}/include/sharaku
-#cp -pR ${BASE_PATH}/libs/generic/libwq.generic.linux.x86.a ${sharaku}/lib/wq
-#cp -pR ${BASE_PATH}/libs/log/libwq.log.linux.x86.a ${sharaku}/lib/wq
-#cp -pR ${BASE_PATH}/libs/wq/libwq.wq.linux.x86.a ${sharaku}/lib/wq
-#cp -pR ${BASE_PATH}/libs/devfile/libwq.devfile.linux.x86.a ${sharaku}/lib/wq
-#cp -pR ${BASE_PATH}/libs/log/tools/logvewer/logviewr ${sharaku}/bin/wq
-#
+do_copy ${BASE_PATH}/libs/pool
 

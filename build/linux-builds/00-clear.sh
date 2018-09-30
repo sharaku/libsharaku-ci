@@ -39,4 +39,5 @@ if [ -f ${BASE_PATH}libs/generic/Makefile ]; then
 	# lib‚ðƒNƒŠƒA
 	make -C ${BASE_PATH}libs/container clean
 	make -C ${BASE_PATH}libs/atomic clean
+	make -C ${BASE_PATH}libs/pool clean
 fi
