@@ -50,3 +50,5 @@ do_src_cppcheck()
 do_src_cppcheck ${BASE_PATH}libs/container
 do_src_cppcheck ${BASE_PATH}libs/atomic
 do_src_cppcheck ${BASE_PATH}libs/pool
+do_src_cppcheck ${BASE_PATH}libs/game/pzl
+do_src_cppcheck ${BASE_PATH}libs/game/wslg

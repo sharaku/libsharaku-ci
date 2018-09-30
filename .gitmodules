@@ -7,3 +7,6 @@
 [submodule "libs/pool"]
 	path = libs/pool
 	url = https://github.com/sharaku/pool.git
+[submodule "libs/game"]
+	path = libs/game
+	url = https://github.com/sharaku/game.git
