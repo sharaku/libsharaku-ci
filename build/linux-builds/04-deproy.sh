@@ -36,9 +36,9 @@ readonly BASE_PATH=${OBJ_PATH}/../../
 
 rm -rf ${DEF_DEPROYPATH}
 mkdir -p ${DEF_DEPROYPATH}/
-mkdir -p ${DEF_DEPROYPATH}/include
-mkdir -p ${DEF_DEPROYPATH}/lib
-mkdir -p ${DEF_DEPROYPATH}/bin
+mkdir -p ${DEF_DEPROYPATH}/include/libsharaku/
+mkdir -p ${DEF_DEPROYPATH}/lib/libsharaku/
+mkdir -p ${DEF_DEPROYPATH}/bin/libsharaku/
 
 # makeを行う
 #  arg1		ビルド対象
@@ -47,9 +47,9 @@ do_copy()
 	lib_path=$1
 	cp -pR ${lib_path}/include ${DEF_DEPROYPATH}
 
-	if [ -f "${lib_path}/lib*.a" ]; then
-		cp -pR ${lib_path}/${lib_path}/lib*.a ${DEF_DEPROYPATH}lib/libsharaku/
-	fi
+#	if [ -f "${lib_path}/lib*.a" ]; then
+		cp -pR ${lib_path}/lib*.a ${DEF_DEPROYPATH}/lib/libsharaku/
+#	fi
 }
 
 
@@ -62,4 +62,6 @@ do_copy ${BASE_PATH}/libs/pool
 do_copy ${BASE_PATH}/libs/type
 do_copy ${BASE_PATH}/libs/lock
 do_copy ${BASE_PATH}/libs/debug
+cp ${BASE_PATH}/libs/debug/logvewer ${DEF_DEPROYPATH}/bin/libsharaku/
 
+exit 0
