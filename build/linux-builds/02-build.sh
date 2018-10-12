@@ -53,3 +53,6 @@ do_lib_build()
 do_lib_build ${BASE_PATH}libs/container linux-x86
 do_lib_build ${BASE_PATH}libs/atomic linux-x86
 do_lib_build ${BASE_PATH}libs/pool linux-x86
+do_lib_build ${BASE_PATH}libs/type linux-x86
+do_lib_build ${BASE_PATH}libs/lock linux-x86
+do_lib_build ${BASE_PATH}libs/debug linux-x86

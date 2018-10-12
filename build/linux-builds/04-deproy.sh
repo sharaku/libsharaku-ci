@@ -59,4 +59,7 @@ do_copy()
 do_copy ${BASE_PATH}/libs/container
 do_copy ${BASE_PATH}/libs/atomic
 do_copy ${BASE_PATH}/libs/pool
+do_copy ${BASE_PATH}/libs/type
+do_copy ${BASE_PATH}/libs/lock
+do_copy ${BASE_PATH}/libs/debug
 

@@ -40,4 +40,7 @@ if [ -f ${BASE_PATH}libs/generic/Makefile ]; then
 	make -C ${BASE_PATH}libs/container clean
 	make -C ${BASE_PATH}libs/atomic clean
 	make -C ${BASE_PATH}libs/pool clean
+	make -C ${BASE_PATH}libs/type clean
+	make -C ${BASE_PATH}libs/lock clean
+	make -C ${BASE_PATH}libs/debug clean
 fi

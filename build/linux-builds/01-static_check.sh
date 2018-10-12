@@ -50,3 +50,6 @@ do_src_cppcheck()
 do_src_cppcheck ${BASE_PATH}libs/container
 do_src_cppcheck ${BASE_PATH}libs/atomic
 do_src_cppcheck ${BASE_PATH}libs/pool
+do_src_cppcheck ${BASE_PATH}libs/type
+do_src_cppcheck ${BASE_PATH}libs/lock
+do_src_cppcheck ${BASE_PATH}libs/debug
