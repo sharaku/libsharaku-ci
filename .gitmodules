@@ -7,6 +7,15 @@
 [submodule "libs/pool"]
 	path = libs/pool
 	url = https://github.com/sharaku/pool.git
+[submodule "libs/type"]
+	path = libs/type
+	url = https://github.com/sharaku/type.git
+[submodule "libs/debug"]
+	path = libs/debug
+	url = https://github.com/sharaku/debug.git
+[submodule "libs/lock"]
+	path = libs/lock
+	url = https://github.com/sharaku/lock.git
 [submodule "libs/game"]
 	path = libs/game
 	url = https://github.com/sharaku/game.git

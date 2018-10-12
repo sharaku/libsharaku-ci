@@ -44,3 +44,6 @@ do_testing()
 do_testing ${BASE_PATH}libs/container/sharaku.container.test
 do_testing ${BASE_PATH}libs/atomic/sharaku.atomic.test
 do_testing ${BASE_PATH}libs/pool/sharaku.pool.test
+do_testing ${BASE_PATH}libs/type/sharaku.type.test
+do_testing ${BASE_PATH}libs/lock/sharaku.lock.test
+do_testing ${BASE_PATH}libs/debug/sharaku.debug.test

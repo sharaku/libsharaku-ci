@@ -50,6 +50,9 @@ do_copy()
 	lib_path=$1
 	cp -pR ${lib_path}/include ${DEF_DEPROYPATH}
 
+#	if [ -f "${lib_path}/lib*.a" ]; then
+		cp -pR ${lib_path}/lib*.a ${DEF_DEPROYPATH}/lib/libsharaku/
+#	fi
 }
 
 
@@ -59,6 +62,9 @@ do_copy()
 do_copy ${BASE_PATH}/libs/container
 do_copy ${BASE_PATH}/libs/atomic
 do_copy ${BASE_PATH}/libs/pool
+do_copy ${BASE_PATH}/libs/type
+do_copy ${BASE_PATH}/libs/lock
+do_copy ${BASE_PATH}/libs/debug
 do_copy ${BASE_PATH}/libs/game/pzl
 do_copy ${BASE_PATH}/libs/game/wslg
 
@@ -66,3 +72,6 @@ cp -pR ${BASE_PATH}/libs/pool/libsharaku.pool.linux.x86.a ${DEF_DEPROYPATH}/lib/
 cp -pR ${BASE_PATH}/libs/game/pzl/libgame.pzl.linux.x86.a ${DEF_DEPROYPATH}/lib/libgame/
 cp -pR ${BASE_PATH}/libs/game/wslg/libgame.wslg.linux.x86.a ${DEF_DEPROYPATH}/lib/libgame/
 
+cp ${BASE_PATH}/libs/debug/logvewer ${DEF_DEPROYPATH}/bin/libsharaku/
+
+exit 0
