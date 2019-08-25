@@ -2,7 +2,7 @@ config:
   env:
 
 stages:
-  x86_build
+  - x86_build
 
 stage:
   x86_build:
