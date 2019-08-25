@@ -8,7 +8,5 @@ stage:
     docker:
       image: sharaku/cross-build
     script:
-     - sh: |
-        cd build/linux-builds
-        make
+     - sh: cd build/linux-builds && make
     result: 'result/*.xml'
