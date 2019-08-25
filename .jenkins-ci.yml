@@ -1,9 +1,10 @@
+config:
+
 stages:
-  x86-build
+  x86_build
 
 stage:
-# ƒrƒ‹ƒh‚·‚é
-  x86-build:
+  x86_build:
     node: docker
     docker:
       image: sharaku/cross-build
