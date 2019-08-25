@@ -1,0 +1,14 @@
+stages:
+  x86-build
+
+stage:
+# ƒrƒ‹ƒh‚·‚é
+  x86-build:
+    node: docker
+    docker:
+      image: sharaku/cross-build
+    script:
+     - sh: |
+        cd build/linux-builds
+        make
+    result: 'result/*.xml'
