@@ -1,5 +1,14 @@
 config:
   env:
+  cppcheck:
+    pattern: 'build/linux-builds/result/cppcheck.*.xml'
+  cmake:
+    pattern: 'build/linux-builds/result/make.*'
+  gcc:
+    pattern: 'build/linux-builds/result/make.*'
+  archiveArtifacts:
+    artifacts: 'build/linux-builds/result/*'
+
 
 stages:
   - x86_build
@@ -11,4 +20,4 @@ stage:
       image: sharaku/cross-build
     script:
      - sh: cd build/linux-builds && make
-    result: 'result/*.xml'
+    result: 'build/linux-builds/result/*'
