@@ -11,13 +11,22 @@ config:
 
 
 stages:
+  - cppcheck
   - x86_build
 
 stage:
+  cppcheck:
+    node: docker
+    docker:
+      image: sharaku/cppcheck
+    script:
+     - sh: cd build/linux-builds && 01-static_check.sh
+    result: 'build/linux-builds/result/*'
+
   x86_build:
     node: docker
     docker:
       image: sharaku/cross-build
     script:
-     - sh: cd build/linux-builds && make
+     - sh: cd build/linux-builds && 02-build.sh
     result: 'build/linux-builds/result/*'
