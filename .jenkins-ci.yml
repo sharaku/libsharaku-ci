@@ -1,11 +1,12 @@
 config:
   env:
-  cppcheck:
-    pattern: 'build/linux-builds/result/cppcheck.*.xml'
-  cmake:
-    pattern: 'build/linux-builds/result/make.*'
-  gcc:
-    pattern: 'build/linux-builds/result/make.*'
+  issues:
+    cppcheck:
+      pattern: 'build/linux-builds/result/cppcheck.*.xml'
+    cmake:
+      pattern: 'build/linux-builds/result/make.*'
+    gcc:
+      pattern: 'build/linux-builds/result/make.*'
   archiveArtifacts:
     artifacts: 'build/linux-builds/result/*'
 
